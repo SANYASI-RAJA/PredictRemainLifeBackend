@@ -17,7 +17,7 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173', // your frontend URL
+  origin: 'https://predict-remain-life-frontend.vercel.app/', // your frontend URL
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,                // if you're using cookies or auth headers
   methods: ['GET','POST','PUT','DELETE','OPTIONS']
