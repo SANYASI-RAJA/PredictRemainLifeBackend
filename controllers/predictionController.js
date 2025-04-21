@@ -8,7 +8,7 @@ const axios = require('axios');
 const callMLApi = async (Data) => {
   try {
     // Replace with your actual ML API endpointz
-    const response = await axios.post('http://127.0.0.1:8000/predict/', { data:Data });
+    const response = await axios.post('https://predictremainlifeml.onrender.com/predict/', { data:Data });
     console.log(response);
     // Assuming your API returns the predicted life in response.data.predictedLife
     return response.data.RUL_prediction;
