@@ -23,7 +23,7 @@ app.use(cors({
   methods: ['GET','POST','PUT','DELETE','OPTIONS']
 }));
 app.use(morgan('dev'));
-app.options("*", cors());
+// app.options("*", cors());
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
